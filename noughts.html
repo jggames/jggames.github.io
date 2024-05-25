@@ -20,7 +20,7 @@
 				cycles: 1000,
 				autolock: false,
 				}).ready(function (fs, main) {
-					fs.extract("http://faculty.cbu.ca/jgerrie/Home/NOUGHTS.zip").then(function () {
+					fs.extract("http://jggames.github.io/NOUGHTS.zip").then(function () {
 						main(["-c", "NOUGHTS.EXE"]).then(function (ci) {
 						window.ci = ci;
 					});
