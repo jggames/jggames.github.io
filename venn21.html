@@ -20,7 +20,7 @@
 				cycles: 1000,
 				autolock: false,
 				}).ready(function (fs, main) {
-					fs.extract("http://faculty.cbu.ca/jgerrie/Home/VENN21.zip").then(function () {
+					fs.extract("http://jggames.github.io/Home/VENN21.zip").then(function () {
 						main(["-c", "VENN21.EXE"]).then(function (ci) {
 						window.ci = ci;
 					});
