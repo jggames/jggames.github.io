@@ -26,3 +26,7 @@ a:hover {
 img {
      vertical-align: top;
 }
+table, th, td {
+  border-collapse: collapse;
+  border-color: #700000;
+}
