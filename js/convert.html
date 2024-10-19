@@ -1,0 +1,48 @@
+<html>
+	<meta charset="windows-1252">
+	<head>
+		<script>
+function range(start, end) {
+    const result = [];
+    for (let i = start; i <= end; i++) {
+        result.push(i);
+    }
+    return result;
+}
+
+			function test(x) {
+				var lookup = {};
+			
+
+				const exceptions = [...range(128, 255)];
+
+				console.log(exceptions);
+
+				//for (var i=1;i<32;i++) {
+				for (const i of exceptions) {
+					lookup[String.fromCharCode(i)] = i;
+				}
+				console.log(lookup);
+
+				
+				var inputString = document.getElementById("inputField").value;
+
+				for (const [mcChar, charNumber] of Object.entries(lookup)) {
+					console.log(`convert ${mcChar} to ${charNumber}`);
+					inputString = inputString.replaceAll(mcChar, "CHR$("+charNumber+")");
+				}
+				console.log("output:");
+				console.log(inputString);
+
+				document.getElementById("outputField").value = inputString;
+			}
+		</script>
+	</head>
+	<body>
+		<textarea rows="30" cols="128" wrap="soft" id="inputField"></textarea>
+		<br>
+		<button onclick="test('s')">Convert!</button>
+		<br>
+		<textarea rows="10" cols="128" wrap="soft" id="outputField"></textarea>
+	</body>
+</html>

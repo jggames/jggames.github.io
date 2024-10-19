@@ -1,0 +1,210 @@
+<html>
+	<meta charset="windows-1252">
+	<head>
+		<script>
+			function replaceCharacters(charNumber, char, line) {
+				var newLine = "", i = 0, runLength = 0;
+				for (;i < line.length; i++) {
+					if (line.charAt(i) == String.fromCharCode(charNumber)) {
+						runLength++;
+					}
+					else {
+						if (runLength > 0) {
+							// add run
+							// TODO IF runLength == 0
+							newLine +=
+								"STRING$(" + runLength + "," + charNumber + ")" +
+								line.charAt(i); // also include charAt(i)!
+							runLength = 0;
+						}
+						else {
+							// don't convert
+							newLine += line.charAt(i);
+						}
+					}
+				}
+				// if reached end during a run
+				if (runLength > 0) {
+					// TODO chr if runLength == 0
+					newLine += "STRING$(" + runLength + "," + charNumber + ")";
+				}
+
+				return newLine;
+			}
+
+function range(start, end) {
+    const result = [];
+    for (let i = start; i <= end; i++) {
+        result.push(i);
+    }
+    return result;
+}
+
+			function test(x) {
+				/*var lookup = {};
+			
+
+				const exceptions = [...range(128, 255)];
+
+				console.log(exceptions);
+
+				//for (var i=1;i<32;i++) {
+				for (const i of exceptions) {
+					lookup[String.fromCharCode(i)] = i;
+				}*/
+
+				var lookup = {
+"€":  128 ,
+"":  129 ,
+"‚":  130 ,
+"ƒ":  131 ,
+"„":  132 ,
+"…":  133 ,
+"†":  134 ,
+"‡":  135 ,
+"ˆ":  136 ,
+"‰":  137 ,
+"Š":  138 ,
+"‹":  139 ,
+"Œ":  140 ,
+"":  141 ,
+"Ž":  142 ,
+"":  143 ,
+"":  144 ,
+"‘":  145 ,
+"’":  146 ,
+"“":  147 ,
+"”":  148 ,
+"•":  149 ,
+"–":  150 ,
+"—":  151 ,
+"˜":  152 ,
+"™":  153 ,
+"š":  154 ,
+"›":  155 ,
+"œ":  156 ,
+"":  157 ,
+"ž":  158 ,
+"Ÿ":  159 ,
+" ":  160 ,
+"¡":  161 ,
+"¢":  162 ,
+"£":  163 ,
+"¤":  164 ,
+"¥":  165 ,
+"¦":  166 ,
+"§":  167 ,
+"¨":  168 ,
+"©":  169 ,
+"ª":  170 ,
+"«":  171 ,
+"¬":  172 ,
+"­":  173 ,
+"®":  174 ,
+"¯":  175 ,
+"°":  176 ,
+"±":  177 ,
+"²":  178 ,
+"³":  179 ,
+"´":  180 ,
+"µ":  181 ,
+"¶":  182 ,
+"·":  183 ,
+"¸":  184 ,
+"¹":  185 ,
+"º":  186 ,
+"»":  187 ,
+"¼":  188 ,
+"½":  189 ,
+"¾":  190 ,
+"¿":  191 ,
+"À":  192 ,
+"Á":  193 ,
+"Â":  194 ,
+"Ã":  195 ,
+"Ä":  196 ,
+"Å":  197 ,
+"Æ":  198 ,
+"Ç":  199 ,
+"È":  200 ,
+"É":  201 ,
+"Ê":  202 ,
+"Ë":  203 ,
+"Ì":  204 ,
+"Í":  205 ,
+"Î":  206 ,
+"Ï":  207 ,
+"Ð":  208 ,
+"Ñ":  209 ,
+"Ò":  210 ,
+"Ó":  211 ,
+"Ô":  212 ,
+"Õ":  213 ,
+"Ö":  214 ,
+"×":  215 ,
+"Ø":  216 ,
+"Ù":  217 ,
+"Ú":  218 ,
+"Û":  219 ,
+"Ü":  220 ,
+"Ý":  221 ,
+"Þ":  222 ,
+"ß":  223 ,
+"à":  224 ,
+"á":  225 ,
+"â":  226 ,
+"ã":  227 ,
+"ä":  228 ,
+"å":  229 ,
+"æ":  230 ,
+"ç":  231 ,
+"è":  232 ,
+"é":  233 ,
+"ê":  234 ,
+"ë":  235 ,
+"ì":  236 ,
+"í":  237 ,
+"î":  238 ,
+"ï":  239 ,
+"ð":  240 ,
+"ñ":  241 ,
+"ò":  242 ,
+"ó":  243 ,
+"ô":  244 ,
+"õ":  245 ,
+"ö":  246 ,
+"÷":  247 ,
+"ø":  248 ,
+"ù":  249 ,
+"ú":  250 ,
+"û":  251 ,
+"ü":  252 ,
+"ý":  253 ,
+"þ":  254 ,
+"ÿ":  255
+};
+				console.log(lookup);
+
+				
+				var inputString = document.getElementById("inputField").value;
+
+				for (const [mcChar, charNumber] of Object.entries(lookup)) {
+					console.log(`convert ${mcChar} to ${charNumber}`);
+					//inputString = inputString.replaceAll(mcChar, "CHR$("+charNumber+")");
+					inputString = replaceCharacters(charNumber, mcChar, inputString);
+				}
+				console.log("output:");
+				console.log(inputString);
+
+				document.getElementById("outputField").value = inputString;
+			}
+		</script>
+	</head>
+	<body>
+		<textarea rows="30" cols="128" wrap="soft" id="inputField"></textarea>
+		<br>
+		<button onclick="test('s')">Convert!</button>
+		<br>
+		<textarea rows="10" cols="128" wrap="soft" id="outputField"></textarea>
+	</body>
+</html>
