@@ -1,0 +1,107 @@
+<DOCTYPE html>
+<html>
+<head>
+<META name="author" content="James B. Gerrie">
+<META name="description" content="Screenshots of Jim Gerrie's 8-bit Basic Games and Other Software"> 
+<META name="keywords" content="software studies,retrogame archeology,retrocomputing,8-bit,vintage computing,classic computing,retrocoding,BASIC,home computer,type-in program,Play,online">
+<title>Type-in Mania: Programs</title>
+<LINK REL="StyleSheet" href="css/typeinmania.css" TYPE="text/css">
+</head>
+<body>
+<p align="center"><img src="img/CBU-Top-Bars.png" alt="CBU-Top-Bars" border="0" align="center" width=100%></p>
+<p align="center"><h1>Type-in Mania: Canadian Early BASIC Programs</h1></p>
+
+<table align="center">
+<tbody>
+
+<tr>
+<td align="center"><p><big><a href="Type-in-Mania.html">Type-in Mania Main Page</a></big></p><p><big><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Latest_Jim_G_MC-10_Compilation">Emulator .C10 versions of these files</a></big></p></td>
+<td align="center"><p><big><a href="Type-in-Mania-AI-Programs.html">Early BASIC AI Programs Page</a></big></p><p><big><a href="Type-in-Mania-Text-Adventures.html">Classic BASIC Text Adventures</a></big></p></td>
+<td align="center"><p><big><a href="Type-in-Mania-Canadian-Programs.html">Canadian Early BASIC Programs</a></big></p><p><big><a href="MC-10Programmers.html">Modern TRS-80 MC-10 Programs</a></big></p></td>
+</tr>
+
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+
+<tr><td colspan="3" align="center"><big>Click on screenshots to go to Github directory containing source code for FILES (uppercase names).</big></td></tr>
+<tr><td colspan="3" align="center"><big>Click <a href="https://archive.org/details/@james_gerrie?query=Canada">here for my Internet Archive uploads page</a> to search for and run FILES via emulation.</big></td></tr>
+<tr><td colspan="3" align="center"><big>Click <a href="https://museum.eecs.yorku.ca/exhibits/show/hobby_canada/hobby_canada">here for a history of early Canadian computing</a> hosted by York University.</big></td></tr>
+
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+
+<script type="text/javascript">
+	row_counter = 0;
+	col_counter = 0;
+	var items = [
+
+'<a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Text%20Adventures/AHHA"><img border=0 alt="screenshot" src="img/ahha.png"></a><br /><b>Filename: </b>AHHA<br /><b>Title: </b><br /><b>Author: </b> Geoff Wells<br /><b>Date: </b>1982<br /><b>Publisher/Source: </b><br /><b>Genre: </b><br /><b>Platform: </b><br /><b>BASIC Version: </b>',
+'<a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Casino/Bandit"><img border=0 alt="screenshot" src="img/bandit.png"><br /></a><b>Filename: </b>BANDIT<br /><b>Title: </b><br /><b>Author: </b>Steve Rimmer<br /><b>Date: </b>1984<br /><b>Publisher/Source: </b><i>Computing Now!</i><br /><b>Genre: </b><br /><b>Platform: </b><br /><b>BASIC Version: </b>',
+'<a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/Boulier"><img border=0 alt="screenshot" src="img/boulier.png"></a><br /><b>Filename: </b>BOULIER<br /><b>Title: </b>Boulier Chinoise<br /><b>Author: </b> ORD-5 (Quebec)<br /><b>Date: </b>1982<br /><b>Publisher/Source: </b><br /><b>Genre: </b><br /><b>Platform: </b><br /><b>BASIC Version: </b>',
+'BULLS "Bulls & Bears" Speakeasy Software 1978<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Strategy%20%26%20Simulation/Bulls"><img border=0 alt="screenshot" src="img/bulls.png">',
+'CANFLAG Jim Gerrie 2017<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Graphics%20%26%20Music/Flags/CanFlag"><img border=0 alt="screenshot" src="img/canflag.png">',
+'CROSWORD "Crossword Puzzle" Cue Inc. 1983<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Artificial%20Intelligence/CrosWord"><img border=0 alt="screenshot" src="img/crosword.png"></a>',
+'DATABASE Hayes Publishing 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/Database"><img src="img/database.png" border="0" alt="screenshot">',
+'DEEDYORK by Dwight Logan 1982<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Text%20Adventures/DeedYork"><img border=0 alt="screenshot" src="img/deedyork.png">',
+'LOGGER Brian Jaikens 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/Logger"><img border=0 alt="screenshot" src="img/logger.png">',
+'HOCKEY "Hockey" Robert Puopolo 1978<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Strategy%20%26%20Simulation/Hockey"><img border=0 alt="screenshot" src="img/hockey.png">',
+'GETAWAY "The Getaway" Howard Evans 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/Getaway"><img border=0 alt="screenshot" src="img/getaway.png">',
+'GRAPHER Hayes Publishing 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/Grapher"><img src="img/grapher.png" border="0" alt="screenshot">',
+'FURTRADE "Fur Trader" Dan Bachor UofA 1978<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Strategy%20%26%20Simulation/FurTrade"><img border=0 alt="screenshot" src="img/furtrade.png">',
+'LINESOFA "Lines of Action" Sol Guber 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Board%20Games/LinesofAc"><img border=0 alt="screenshot" src="img/linesofa.png">',
+'MAZE "Haze Maze" M. Oehrman 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/Maze"><img src="img/maze.png" border="0" alt="screenshot">',
+'MOONSHUT "Moon Shuttle" Darek Simonson 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/MCX/MoonShut"><img border=1 alt="screenshot" src="img/moonshut.png">',
+'MURDER1 D. Mackie, P. Lear & G. Richards 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Board%20Games/Murder1"><img src="img/murder1.png" border="0" alt="screenshot">',
+'NOVASCOT Jim Gerrie 2024<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Graphics%20%26%20Music/NovaScot"><img border=0 alt="screenshot" src="img/novascot.png">',
+'PENTOMIN "Pentominos" Jim Butterfield 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Artificial%20Intelligence/Pentomin"><img border=0 alt="screenshot" src="img/pentomin.png"></a>',
+'POKER <i>Computing Now!</i> Steve Rimmer 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Artificial%20Intelligence/Poker"><img src="img/poker.png" border="0" alt="screenshot"></a>',
+'PRINTUSI "PRINT USING" Jim Butterfield 1981<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education"><img border=0 alt="screenshot" src="img/printusi.png">',
+'QUEBEC Jim Gerrie 2016<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Graphics%20%26%20Music/Flags"><img border=0 alt="screenshot" src="img/quebec.png">',
+'REDALERT "Red Alert" S. Parker & P. Lear 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/RedAlert"><img border=0 alt="screenshot" src="img/redalert.png">',
+'SCHROEDR "Piano Demo" George Dunbar 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Graphics%20%26%20Music/Schroedr"><img border=0 alt="screenshot" src="img/schroedr.png">',
+'SNAILS "Snails Trails" Peter Lear 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/4K/Snails"><img border=0 alt="screenshot" src="img/snails.png">',
+'SUBATTAC "Sub Attack" Stuart Hall 1986<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/SubAttac"><img src="img/subattac.png" border="0" alt="screenshot">',
+'STELLEMP "Stellar Empires" Graham Wilson 1982<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Strategy%20%26%20Simulation/StellEmp"><img border=0 alt="screenshot" src="img/stellemp.png">',
+'SBOAT "Speedboat" Steven Holiday 1984<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Arcade/4K/SBoat"><img border=0 alt="screenshot" src="img/sboat.png">',
+'TRIVIA "Microtrivia" Speakeasy Software 1978<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/Trivia"><img border=0 alt="screenshot" src="img/trivia.png">',
+'WARLORD "Warlords" Speakeasy Software 1978<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Strategy%20%26%20Simulation/Warlord"><img border=0 alt="screenshot" src="img/warlord.png">',
+'WORDPRO "Text Editor" Hayes Publishing 1985<br /><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/WordPro"><img src="img/wordpro.png" border="0" alt="screenshot">',
+	];
+
+//
+//  3 Columnization of above data
+//  Copyright (c) Jim Gerrie 2019
+//
+	items.sort();
+
+	for (row_counter = 0; row_counter < items.length; row_counter++)
+	{
+           col_counter++;
+		if (col_counter == 1) {
+			document.write('<tr>');
+		}
+		document.write('<td align="left" valign="top">'+items[row_counter]+'</td>');
+		if (col_counter == 3) {
+			document.write('</tr>');
+			col_counter = 0;
+		}
+	}
+	if (col_counter == 1) {
+		document.write('<td align="left" valign="top">&nbsp;</td><td align="center" valign="top">&nbsp;</td></tr>');
+	}
+	if (col_counter == 2) {
+		document.write('<td align="left" valign="top">&nbsp;</td></tr>');
+	}
+
+	document.write('<td>&nbsp;</td><td align="center" valign="top">Total programs: '+items.length+'</td><td>&nbsp;</td></tr>');
+
+</script>
+
+</tbody>
+</table>
+<p align="center"><img src="img/CBU-Curved-Bar.png" alt="CBU-Curved-Bar" border="0" align="center" width=100%></p>
+
+</body>
+</html>
