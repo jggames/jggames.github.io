@@ -35,6 +35,7 @@
 <script type="text/javascript">
 	row_counter = 0;
 	col_counter = 0;
+	item_total = 20;
 	var items = [
 
 '<center>AFLAGS</center><a href="https://github.com/jggames/trs80mc10/tree/master/quicktype/Productivity%20%26%20Education/AFlags"><img src="img/aflags.png" width="288" border="0" alt="screenshot"></a><br />Title: Flags<br />Author: William Morris, John Cope<br />Date: March 1981<br />Source: <i>SoftSide Magazine</i><br />Genre: Educational<br />Platform: Atari, MC-10<br />BASIC Version: Atari BASIC',
@@ -100,7 +101,7 @@
 '<center>TIRAGE</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/tirage.png" width="288" border="0" alt="screenshot"></a><br />Title: Tirage<br />Author: Unknown<br />Date: 198?<br />Source: <br />Genre: Logic Puzzle<br />Platform: Atari<br />BASIC Version: Atari BASIC',
 '<center>TROUVE</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/trouve.png" width="288" border="0" alt="screenshot"></a><br />Title: Trouve un Num&eacute;ro<br />Author: Unknown<br />Date: 198?<br />Source: <br />Genre: Logical Puzzle<br />Platform: Atari<br />BASIC Version: Atari BASIC',
 '<center>WOLFPACK</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/wolfpack.png" width="288" border="0" alt="screenshot"></a><br />Title: Wolf Pack<br />Author: Daniel Quirion<br />Date: 1982<br />Source: Unknown<br />Genre: Action/Arcade<br />Platform: Atari<br />BASIC Version: Atari BASIC',
-'<center>TIGERCUB1464</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/tigercub1464.png" width="288" border="0" alt="screenshot"></a><br />Title: Fairware Games<br />Author: Jim Beck<br />Date: 1982?<br />Source: Tigercub Software(PD)<br />Genre: Action/Arcade<br />Platform: TI99/4a<br />BASIC Version: TI994a Ext. BASIC',
+'<center>TIGERCUB1464</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/tigercub1464.png" width="288" border="0" alt="screenshot"></a><br />Title: 6 Fairware Games<br />Author: Jim Beck<br />Date: 1982?<br />Source: Tigercub Software(PD)<br />Genre: Action/Arcade<br />Platform: TI99/4a<br />BASIC Version: TI994a Ext. BASIC',
 '<center>TIGERCUB1493</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/tigercub1493.png" width="288" border="0" alt="screenshot"></a><br />Title: 16 Fine Games<br />Author: Jim Beck<br />Date: 1982?<br />Source: Tigercub Software(PD)<br />Genre: Action/Arcade<br />Platform: TI99/4a<br />BASIC Version: TI994a Ext. BASIC',
 '<center>QUEST</center><a href="https://drive.google.com/file/d/1K9ScXrj8TIxVPuClz7DdgHZ5BXMDIqp2/view?usp=sharing"><img src="img/tquest.png" width="288" border="0" alt="screenshot"></a><br />Title: Treasure Quest<br />Author: Jim Beck<br />Date: 1982?<br />Source: Edmonton 99er Computer User<br />Genre: Text Adventure<br />Platform: TI99/4a<br />BASIC Version: TI994a Ext. BASIC',
 
@@ -111,6 +112,7 @@
 //  Copyright (c) Jim Gerrie 2019
 //
 	items.sort();
+	item_total = item_total + items.length
 
 	for (row_counter = 0; row_counter < items.length; row_counter++)
 	{
@@ -131,7 +133,7 @@
 		document.write('<td align="left">&nbsp;</td></tr>');
 	}
 
-	document.write('<td>&nbsp;</td><td align="center"><br />Total programs: '+items.length+'</td><td>&nbsp;</td></tr>');
+	document.write('<td>&nbsp;</td><td align="center"><br />Total programs: '+item_total+'</td><td>&nbsp;</td></tr>');
 
 </script>
 
